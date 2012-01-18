@@ -2,9 +2,9 @@ package com.zerovx.machines.finite;
 import java.util.List;
 
 public abstract class State {
-		protected boolean accepting;
+		private boolean accepting;
 		
-		public State(){
+		State(){
 			accepting = false;
 		}
 		
@@ -20,6 +20,6 @@ public abstract class State {
 		
 		public abstract List<State> consumeCharacter(char x);
 		
-		public abstract List<State> epsilon();
+		protected abstract List<State> epsilon();
 
 }

@@ -10,7 +10,7 @@ import com.zerovx.machines.finite.NFAState;
 
 public class NFATest {
 
-	static FiniteMachine m;
+	private static FiniteMachine m;
 
 	@BeforeClass
 	public static void setUp(){

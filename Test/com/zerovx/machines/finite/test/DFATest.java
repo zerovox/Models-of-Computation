@@ -9,7 +9,7 @@ import com.zerovx.machines.finite.FiniteMachine;
 
 
 public class DFATest {
-	static FiniteMachine m;
+	private static FiniteMachine m;
 
 	@BeforeClass
 	public static void setUp(){

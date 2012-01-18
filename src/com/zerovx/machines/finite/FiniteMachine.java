@@ -3,8 +3,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FiniteMachine {
-	State start;
-	List<State> current;
+	private final State start;
+	private List<State> current;
 	
 	public FiniteMachine(State s){
 		start = s;

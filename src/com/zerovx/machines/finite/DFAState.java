@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class DFAState extends State{
 	
-	protected Map<Character, State> transitions;
+	private final Map<Character, State> transitions;
 	
 	public DFAState(){
 		super();
@@ -23,7 +23,7 @@ public class DFAState extends State{
 	public List<State> consumeCharacter(char x) {
 		List<State> out = new ArrayList<State>();
 		if(transitions.containsKey(x)){
-			out.add(transitions.get((Character) x));
+			out.add(transitions.get(x));
 		}
 			return out;
 	}

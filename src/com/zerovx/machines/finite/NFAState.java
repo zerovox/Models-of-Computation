@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class NFAState extends State {
 	
-	protected Map<Character, List<State>> transitions;
+	private final Map<Character, List<State>> transitions;
 	
 	public NFAState(){
 		super();
